@@ -84,7 +84,8 @@ DATABASES = {
             'host': 'mongodb+srv://Anju123:Anju%40%2302@cluster0.fybbg.mongodb.net/',  # Replace with your MongoDB Atlas cluster hostname
             'ssl': True,
             'ssl_cert_reqs': ssl.CERT_NONE,  # Add this to disable cert verification
-
+             'socketTimeoutMS': 60000,  # Set socket timeout to 60 seconds
+            'connectTimeoutMS': 60000,  # Set connection timeout to 60 seconds
 
         }
     }
